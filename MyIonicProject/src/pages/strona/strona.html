@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Witaj mugolu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Niech moc będzie z tobą śmiertelniku</h3>
+
+    <button ion-button color="secondary" block (click)="doPrompt()">NO DALEJ, WIEM ŻE CHCESZ</button>
+	
+	<p> No dobra będę miły </p>
+	
+	
+  <ion-list no-border>
+  
+ <ion-list-header>
+      Pobawmy się:
+    </ion-list-header>	
+
+	 <ion-item>
+      <ion-icon name='color-palette' item-start></ion-icon>
+      Malarstwo
+      <ion-note item-end>
+      Abstarkcyjne, bo na więcej cie nie stać
+      </ion-note>
+    </ion-item>
+
+	
+	 <ion-item>
+      <ion-icon name='basketball' item-start></ion-icon>
+		W-f
+      <ion-note item-end>
+      Nie zabij się tylko
+      </ion-note>
+    </ion-item>
+	
+	
+	 <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+       Świetnie się bawię, a ty?
+      </ion-label>
+      <ion-icon name='color-wand' item-start></ion-icon>
+    </ion-item>
+  </ion-list>
+  
+  
+  <ion-content class="card-background-page">
+
+
+
+  <ion-card>
+
+    <img  src="assets/imgs/kot.png"/>
+    <div class="card-title">Koteczek</div>
+    <div class="card-subtitle">41 Listings</div>
+
+  </ion-card>
+
+  <button ion-button (click)=takePicture()>Take Picture</button>
+
+  <p> <img  src="{{ myPhone }}"/></p>
+  
+</ion-content>

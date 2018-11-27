@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My First List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+
+        <ion-card-content>
+        To jest przykladowa karta by testować jej działani
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card (tap)="tapEvent($event)">
+          <ion-item>
+            Tapped: {{tap}} times
+          </ion-item>
+      
+          <div *ngIf="tap === 5">
+              <img src="assets/imgs/forest.jpg"/>
+             </div>
+             
+        </ion-card>
+
+  <ion-fab right bottom>
+
+    <button ion-fab color="dark"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook" (click)="doGoFB()"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter" (click)="doGoTw()"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus" (click)="doGoGP()"></ion-icon></button>
+    </ion-fab-list>
+
+  </ion-fab>
+
+</ion-content>
